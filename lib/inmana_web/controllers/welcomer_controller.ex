@@ -5,7 +5,7 @@ defmodule InmanaWeb.WelcomeController do
 
   def index(conn, params) do
     params
-    |> Welcomer.welcome
+    |> Welcomer.welcome()
     |> handle_response(conn)
   end
 
